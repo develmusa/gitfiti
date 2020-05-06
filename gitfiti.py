@@ -30,8 +30,8 @@ except NameError:
     raw_input = input
 
 
-GITHUB_BASE_URL = 'https://github.com/'
-FALLBACK_IMAGE = 'kitty'
+GITHUB_BASE_URL = 'https://github.zhaw.ch/'
+FALLBACK_IMAGE = 'drone'
 
 
 TITLE = '''
@@ -52,6 +52,36 @@ KITTY = [
   [0,0,4,2,2,3,3,2,2,4,0,0],
   [2,2,4,2,2,2,2,2,2,4,2,2],
   [0,0,0,3,4,4,4,4,3,0,0,0],
+]
+
+DRONE = [
+    [2,2,2,0,2,2,2],
+    [2,3,2,0,2,3,2],
+    [2,2,4,0,4,2,2],
+    [0,0,0,4,0,0,0],
+    [2,2,4,0,4,2,2],
+    [2,3,2,0,2,3,2],
+    [2,2,2,0,2,2,2],
+]
+
+PLANE = [
+    [0,0,0,3,0,0,0,0],
+    [0,0,0,3,3,0,0,0],
+    [3,0,0,2,3,3,0,0],
+    [2,4,4,4,4,4,4,4],
+    [3,0,0,2,3,3,0,0],
+    [0,0,0,3,3,0,0,0],
+    [0,0,0,3,0,0,0,0],
+]
+
+COPTER = [
+    [0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,2,2,2,2,2],
+    [4,0,0,0,0,0,4,0,0],
+    [2,4,0,0,4,4,4,4,0],
+    [0,4,4,4,4,3,3,3,4],
+    [0,3,0,0,0,4,4,4,4],
+    [0,0,0,0,0,3,0,3,0],
 ]
 
 ONEUP = [
@@ -184,17 +214,9 @@ ONEUP_STR = str_to_sprite('''
 
 
 IMAGES = {
-  'kitty': KITTY,
-  'oneup': ONEUP,
-  'oneup2': ONEUP2,
-  'hackerschool': HACKERSCHOOL,
-  'octocat': OCTOCAT,
-  'octocat2': OCTOCAT2,
-  'hello': HELLO,
-  'hireme': HIREME,
-  'oneup_str': ONEUP_STR,
-  'beer': BEER,
-  'gliders': GLIDERS,
+  'drone': DRONE,
+  'plane': PLANE,
+  'copter': COPTER,
 }
 
 
